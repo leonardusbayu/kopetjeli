@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modular Express API</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Modular Express API</h1>
+            <p>A comprehensive Node.js Express API with authentication, logging, and data management</p>
+        </header>
+
+        <div class="auth-section" id="authSection">
+            <div class="card">
+                <div class="card-header">Authentication</div>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        <small>Try: admin or user</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <small>Try: admin123 or user123</small>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="main-content hidden" id="mainContent">
+            <div class="user-info" id="userInfo">
+                <div class="card">
+                    <div class="card-header">Welcome, <span id="currentUser"></span>!</div>
+                    <p>Role: <span id="userRole"></span></p>
+                    <button class="btn-secondary" onclick="logout()">Logout</button>
+                </div>
+            </div>
+
+            <div class="api-section">
+                <div class="card">
+                    <div class="card-header">API Endpoints</div>
+                    <div class="endpoint-list">
+                        <div class="endpoint">
+                            <button class="btn" onclick="testEndpoint('/health', 'GET')">
+                                GET /health
+                            </button>
+                            <span class="endpoint-desc">Check API health status</span>
+                        </div>
+                        <div class="endpoint">
+                            <button class="btn" onclick="testEndpoint('/api/v1/users', 'GET', true)">
+                                GET /api/v1/users
+                            </button>
+                            <span class="endpoint-desc">List all users (requires auth)</span>
+                        </div>
+                        <div class="endpoint">
+                            <button class="btn" onclick="testEndpoint('/api/v1/users/1', 'GET', true)">
+                                GET /api/v1/users/1
+                            </button>
+                            <span class="endpoint-desc">Get user by ID (requires auth)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-management">
+                <div class="card">
+                    <div class="card-header">User Management</div>
+                    <form id="createUserForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="newUsername">Username:</label>
+                                <input type="text" id="newUsername" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="newEmail">Email:</label>
+                                <input type="email" id="newEmail" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="newRole">Role:</label>
+                                <select id="newRole" name="role">
+                                    <option value="user">User</option>
+                                    <option value="admin">Admin</option>
+                                    <option value="manager">Manager</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Create User</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="response-section">
+                <div class="card">
+                    <div class="card-header">API Response</div>
+                    <pre id="responseOutput">Click an endpoint button to see the response...</pre>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="features">
+                <h3>Features Demonstrated:</h3>
+                <ul>
+                    <li>✅ JWT Authentication & Authorization</li>
+                    <li>✅ Structured Logging with Winston</li>
+                    <li>✅ Configuration Management</li>
+                    <li>✅ Error Handling Middleware</li>
+                    <li>✅ Security Headers with Helmet</li>
+                    <li>✅ CORS Configuration</li>
+                    <li>✅ Rate Limiting</li>
+                    <li>✅ RESTful API Design</li>
+                    <li>✅ Input Validation</li>
+                    <li>✅ Health Check Endpoint</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

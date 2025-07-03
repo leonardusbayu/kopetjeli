@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Express API Project 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-03 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/middleware/errorhandler.js:15
+msgctxt "Error|HTTP 400"
+msgid "Bad request"
+msgstr ""
+
+#: src/middleware/authmiddleware.js:45
+msgctxt "Error|HTTP 401"
+msgid "Unauthorized"
+msgstr ""
+
+#: src/middleware/errorhandler.js:20
+msgctxt "Error|HTTP 403"
+msgid "Forbidden"
+msgstr ""
+
+#: src/middleware/errorhandler.js:25
+msgctxt "Error|HTTP 404"
+msgid "Not found"
+msgstr ""
+
+#: src/middleware/errorhandler.js:30
+msgctxt "Error|HTTP 405"
+msgid "Method not allowed"
+msgstr ""
+
+#: src/middleware/errorhandler.js:35
+msgctxt "Error|HTTP 409"
+msgid "Conflict"
+msgstr ""
+
+#: src/middleware/errorhandler.js:40
+msgctxt "Error|HTTP 500"
+msgid "Internal server error"
+msgstr ""
+
+#: src/middleware/errorhandler.js:45
+msgctxt "Error|HTTP 503"
+msgid "Service unavailable"
+msgstr ""
+
+#: src/controllers/validation.js:10
+msgctxt "Validation error"
+msgid "Validation failed"
+msgstr ""
+
+#: src/controllers/validation.js:15
+msgctxt "Validation error"
+msgid "Missing required field: %(field)s"
+msgstr ""
+
+#: src/controllers/validation.js:20
+msgctxt "Validation error"
+msgid "Invalid value for field: %(field)s"
+msgstr ""
+
+#: src/controllers/resource.js:30
+msgctxt "Success|Resource creation"
+msgid "Resource created successfully"
+msgstr ""
+
+#: src/controllers/resource.js:35
+msgctxt "Success|Resource update"
+msgid "Resource updated successfully"
+msgstr ""
+
+#: src/controllers/resource.js:40
+msgctxt "Success|Resource deletion"
+msgid "Resource deleted successfully"
+msgstr ""
+
+#: src/controllers/auth.js:10
+msgctxt "Auth|User registration"
+msgid "User registration successful"
+msgstr ""
+
+#: src/controllers/auth.js:15
+msgctxt "Auth|User login"
+msgid "User login successful"
+msgstr ""
+
+#: src/controllers/auth.js:20
+msgctxt "Auth|User error"
+msgid "User not found"
+msgstr ""
+
+#: src/controllers/auth.js:25
+msgctxt "Auth|User error"
+msgid "Invalid email or password"
+msgstr ""
+
+#: src/controllers/auth.js:30
+msgctxt "Auth|User registration"
+msgid "Email already in use"
+msgstr ""
+
+#: src/controllers/auth.js:35
+msgctxt "Auth|Password reset"
+msgid "Password reset email sent"
+msgstr ""
+
+#: src/controllers/auth.js:40
+msgctxt "Auth|Password reset"
+msgid "Password reset successful"
+msgstr ""
+
+#: src/controllers/auth.js:45
+msgctxt "Auth|Email verification"
+msgid "Email verification required"
+msgstr ""
+
+#: src/controllers/auth.js:50
+msgctxt "Auth|Email verification"
+msgid "Email verified successfully"
+msgstr ""
+
+#: src/controllers/auth.js:55
+msgctxt "Auth|Token error"
+msgid "Access token expired"
+msgstr ""
+
+#: src/controllers/auth.js:60
+msgctxt "Auth|Token error"
+msgid "Token invalid"
+msgstr ""
+
+#: src/controllers/file.js:10
+msgctxt "File|Upload"
+msgid "File upload failed"
+msgstr ""
+
+#: src/controllers/file.js:15
+msgctxt "File|Download"
+msgid "File not found"
+msgstr ""
+
+#: src/configloader.js:10
+msgctxt "Config|Load success"
+msgid "Configuration loaded successfully"
+msgstr ""
+
+#: src/configloader.js:15
+msgctxt "Config|Load failure"
+msgid "Configuration load failed"
+msgstr ""
+
+#: src/database.js:10
+msgctxt "Database|Connection success"
+msgid "Database connection established"
+msgstr ""
+
+#: src/database.js:15
+msgctxt "Database|Connection error"
+msgid "Database connection error"
+msgstr ""
+
+#: src/importer/xmlimporter.js:10 src/importer/csvimporter.js:10
+msgctxt "Import"
+msgid "Import completed successfully"
+msgstr ""
+
+#: src/importer/xmlimporter.js:15 src/importer/csvimporter.js:15
+msgctxt "Import"
+msgid "Import failed"
+msgstr ""
+
+#: src/exporter.js:10
+msgctxt "Export"
+msgid "Export completed successfully"
+msgstr ""
+
+#: src/exporter.js:15
+msgctxt "Export"
+msgid "Export failed"
+msgstr ""
+
+#: src/routes.js:10
+msgctxt "Generic|Welcome"
+msgid "Welcome"
+msgstr ""
+
+#: src/routes.js:15
+msgctxt "Generic|Goodbye"
+msgid "Goodbye"
+msgstr ""

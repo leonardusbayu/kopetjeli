@@ -1,0 +1,6 @@
+email,firstName,lastName,passwordHash,role,isActive
+john.doe@example.com,John,Doe,$2b$10$KbQiMZc5eYQAh8FERp7uIOyc5oFSyIEbX8kdkC9Ypb6uRWWsB8IXe,admin,1
+jane.smith@example.com,Jane,Smith,$2b$10$D.uYKQZkqEwfnlQGzcxFOOuv2G/O3y.17K0O3XKUyPN4QBJ9SyKpC,user,1
+sam.wilson@example.com,Sam,Wilson,$2b$10$Qv9C89WXqysNAZ1YixF7NeP4yW49S2XRmcmX0u.rsY5MzZvfhNqDG,manager,0
+emma.johnson@example.com,Emma,Johnson,$2b$10$u6f3Ra8K1sdew1390FQ/ueGh8bB0Q1NZZ9VzOYBrSxV76Cdu48rHC,user,1
+li.wang@example.com,Li,Wang,$2b$10$HypRn0zAk0ZOGqgFZ6CJRO8jPeNZOIYG6lCryrHboiI.Zaqox1N6G,admin,0

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<initialData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="initialData.xsd">
+  <roles>
+    <role>
+      <id>1</id>
+      <name>admin</name>
+      <description>Administrator with full access</description>
+      <createdAt>2025-07-01T00:00:00Z</createdAt>
+      <updatedAt>2025-07-01T00:00:00Z</updatedAt>
+    </role>
+    <role>
+      <id>2</id>
+      <name>user</name>
+      <description>Regular user with limited access</description>
+      <createdAt>2025-07-01T00:00:00Z</createdAt>
+      <updatedAt>2025-07-01T00:00:00Z</updatedAt>
+    </role>
+    <role>
+      <id>3</id>
+      <name>guest</name>
+      <description>Read-only access</description>
+      <createdAt>2025-07-01T00:00:00Z</createdAt>
+      <updatedAt>2025-07-01T00:00:00Z</updatedAt>
+    </role>
+  </roles>
+  <users>
+    <user>
+      <id>1</id>
+      <username>admin</username>
+      <passwordHash>${ADMIN_PASSWORD_HASH}</passwordHash>
+      <email>admin@example.com</email>
+      <roleId>1</roleId>
+      <status>active</status>
+      <createdAt>2025-07-01T00:00:00Z</createdAt>
+      <updatedAt>2025-07-01T00:00:00Z</updatedAt>
+    </user>
+  </users>
+  <settings>
+    <setting>
+      <key>siteName</key>
+      <value>My Application</value>
+      <createdAt>2025-07-01T00:00:00Z</createdAt>
+      <updatedAt>2025-07-01T00:00:00Z</updatedAt>
+    </setting>
+    <setting>
+      <key>defaultLocale</key>
+      <value>en</value>
+      <createdAt>2025-07-01T00:00:00Z</createdAt>
+      <updatedAt>2025-07-01T00:00:00Z</updatedAt>
+    </setting>
+    <setting>
+      <key>logLevel</key>
+      <value>info</value>
+      <createdAt>2025-07-01T00:00:00Z</createdAt>
+      <updatedAt>2025-07-01T00:00:00Z</updatedAt>
+    </setting>
+    <setting>
+      <key>paginationSize</key>
+      <value>25</value>
+      <createdAt>2025-07-01T00:00:00Z</createdAt>
+      <updatedAt>2025-07-01T00:00:00Z</updatedAt>
+    </setting>
+  </settings>
+  <languages>
+    <language>
+      <code>en</code>
+      <name>English</name>
+      <default>true</default>
+      <createdAt>2025-07-01T00:00:00Z</createdAt>
+      <updatedAt>2025-07-01T00:00:00Z</updatedAt>
+    </language>
+    <language>
+      <code>es</code>
+      <name>Spanish</name>
+      <default>false</default>
+      <createdAt>2025-07-01T00:00:00Z</createdAt>
+      <updatedAt>2025-07-01T00:00:00Z</updatedAt>
+    </language>
+    <language>
+      <code>fr</code>
+      <name>French</name>
+      <default>false</default>
+      <createdAt>2025-07-01T00:00:00Z</createdAt>
+      <updatedAt>2025-07-01T00:00:00Z</updatedAt>
+    </language>
+  </languages>
+  <apiKeys>
+    <apiKey>
+      <id>1</id>
+      <key>f47ac10b-58cc-4372-a567-0e02b2c3d479</key>
+      <description>Default API key</description>
+      <active>true</active>
+      <createdAt>2025-07-01T00:00:00Z</createdAt>
+      <updatedAt>2025-07-01T00:00:00Z</updatedAt>
+    </apiKey>
+  </apiKeys>
+</initialData>

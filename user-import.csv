@@ -1,0 +1,4 @@
+username,email,firstName,lastName,role,passwordHash
+"jdoe","jdoe@example.com","John","Doe","user","$2b$12$KbQiMVtsu6DvVxaLy0vyWOJywAYOSbL0rLDKTi4B5Tq624nS3Gq1K"
+"asmith","asmith@example.com","Alice","Smith","admin","$2b$12$LZPq7HhMw6FdZj1nTtGv8eSzgYMdZwNzOxhQ7Yc0u3W2FpR1aGcYbO"
+"bwilliams","bwilliams@example.com","Bob","Williams","user","$2b$12$XsE6n/TC7ba8UiqL6YyxWeGQ8ZhXhHmiMB2k/oFjTq9Zc5dGpWvRy"

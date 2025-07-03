@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<initialData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="initial-data.xsd">
+  <settings>
+    <setting key="siteName" value="MyApp"/>
+    <setting key="defaultLocale" value="en"/>
+    <supportedLocales>
+      <locale>en</locale>
+      <locale>es</locale>
+      <locale>fr</locale>
+    </supportedLocales>
+  </settings>
+  <roles>
+    <role>
+      <name>Admin</name>
+      <description>Administrator with full access</description>
+    </role>
+    <role>
+      <name>User</name>
+      <description>Regular user with limited access</description>
+    </role>
+  </roles>
+  <permissions>
+    <permission>
+      <name>read:all</name>
+      <description>Read all resources</description>
+    </permission>
+    <permission>
+      <name>write:all</name>
+      <description>Write all resources</description>
+    </permission>
+  </permissions>
+  <rolePermissions>
+    <rolePermission role="Admin" permission="read:all"/>
+    <rolePermission role="Admin" permission="write:all"/>
+    <rolePermission role="User" permission="read:all"/>
+  </rolePermissions>
+  <users>
+    <user>
+      <username>admin</username>
+      <email>admin@example.com</email>
+      <passwordHash>${ADMIN_PASSWORD_HASH}</passwordHash>
+      <roles>
+        <role>Admin</role>
+      </roles>
+    </user>
+  </users>
+</initialData>
